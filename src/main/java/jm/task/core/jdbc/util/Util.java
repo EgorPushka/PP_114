@@ -14,9 +14,9 @@ public class Util {
     public static Connection getConnection() throws SQLException, ClassNotFoundException {
         Connection connection;
         Class.forName(DB_DRIVER_NAME); //динамическая загрузка драйвера, лучше чем статическая
-        connection = DriverManager.getConnection(DB_URL, DB_USERNAME, DB_USER_PASSWORD);
+        connection = DriverManager.getConnection(DB_URL, DB_USERNAME, DB_USER_PASSWORD); //goiegioeugioe
         System.out.println("BD :: Start Connection");
-        return connection;
+        return connection; //feoifoieufe
     }
 
     public static void closeConnection(Connection connection) throws SQLException {
