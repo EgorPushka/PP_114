@@ -1028,8 +1028,8 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </schema>
     <schema id="289" parent="1" name="mydbtest">
       <Current>1</Current>
-      <IntrospectionTimestamp>2023-08-28.21:50:23</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2023-08-28.15:50:23</LocalIntrospectionTimestamp>
+      <IntrospectionTimestamp>2023-08-29.18:57:49</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2023-08-29.12:57:49</LocalIntrospectionTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="290" parent="1" name="mysql">
@@ -1078,7 +1078,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <CollationName>utf8mb3_general_ci</CollationName>
     </table>
     <column id="302" parent="300" name="id">
-      <AutoIncrement>4</AutoIncrement>
+      <AutoIncrement>3</AutoIncrement>
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
