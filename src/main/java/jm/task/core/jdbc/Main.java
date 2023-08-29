@@ -11,9 +11,16 @@ import java.sql.SQLException;
 public class Main {
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
         // реализуйте алгоритм здесь
-        UserDaoJDBCImpl userDaoJDBC = new UserDaoJDBCImpl();
-        System.out.println("--------------");
+//        Connection connection = Util.getConnection();
+//        System.out.println("--------------");
+//        Util.closeConnection(connection);
 
+        UserDaoJDBCImpl u1 = new UserDaoJDBCImpl();
+
+//        u1.dropUsersTable();
+//
+//        u1.createUsersTable();
+        u1.saveUser("egor","push",(byte) 38);
 
     }
 }
