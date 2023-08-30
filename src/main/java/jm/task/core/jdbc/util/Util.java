@@ -9,7 +9,7 @@ import static jm.task.core.jdbc.color_const.AnsiColorConst.*;
 public class Util {
 
     private static final String DB_URL = "jdbc:mysql://localhost:3306/mydbtest";
-    private static final String DB_USERNAME = "1root";
+    private static final String DB_USERNAME = "root";
     private static final String DB_USER_PASSWORD = "root";
     private static final String DB_DRIVER_NAME = "com.mysql.cj.jdbc.Driver";
 
