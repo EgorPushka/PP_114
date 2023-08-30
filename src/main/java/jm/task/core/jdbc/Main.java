@@ -14,10 +14,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
-    public static void main(String[] args) throws SQLException, ClassNotFoundException {
-        UserService u1 = new UserServiceImpl();
+    public static void main(String[] args) {
 
+        UserDaoJDBCImpl u1 = new UserDaoJDBCImpl();
 
-
+        u1.removeUserById(2);
+        u1.createUsersTable();
+        u1.dropUsersTable();
+        u1.createUsersTable();
     }
 }
