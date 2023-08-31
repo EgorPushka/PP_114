@@ -100,7 +100,6 @@ public class UserDaoJDBCImpl implements UserDao {
                 }
             }
         }
-
     }
 
     @Override
@@ -109,6 +108,7 @@ public class UserDaoJDBCImpl implements UserDao {
         String sql = "DELETE FROM users WHERE id = ?";
 
         if ((connection = Util.getConnection()) != null) {
+
             try (PreparedStatement preStatement = connection.prepareStatement(sql)) {
 
                 preStatement.setLong(1, id);
@@ -141,6 +141,7 @@ public class UserDaoJDBCImpl implements UserDao {
         if ((connection = Util.getConnection()) != null) {
 
             try (Statement statement = connection.createStatement()) {
+
                 ResultSet resSet = statement.executeQuery(sql);
                 while (resSet.next()) {
                     userList.add(new User(resSet.getLong("id")
@@ -162,7 +163,6 @@ public class UserDaoJDBCImpl implements UserDao {
                 System.out.printf("%s DB :: Table is empty NO Users! %s%n", CB, RE);
             }
         }
-
         return userList;
     }
 
